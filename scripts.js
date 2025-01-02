@@ -1,21 +1,12 @@
 // scripts.js
 
 document.addEventListener("DOMContentLoaded", () => {
-    const dots = document.getElementById("dots");
     const typedText = document.getElementById("typed-text");
     const darkModeButton = document.getElementById("toggle-dark-mode");
-    const darkModeIcon = document.getElementById("dark-mode-icon");
     const body = document.body;
 
-    let dotCount = 0;
     const messages = ["Connecting users...", "Building something great...", "Stay tuned!"];
     let messageIndex = 0;
-
-    // Animate dots
-    setInterval(() => {
-        dotCount = (dotCount + 1) % 4;
-        dots.textContent = ".".repeat(dotCount) + "\u2003".repeat(3 - dotCount);
-    }, 500);
 
     // Type text animation
     const typeMessage = () => {
@@ -49,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Toggle dark mode
     darkModeButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
-        const isDarkMode = body.classList.contains("dark-mode");
-        darkModeIcon.src = isDarkMode ? "dark-icon.png" : "light-icon.png";
+        darkModeButton.textContent = body.classList.contains("dark-mode") ? "🌙" : "🌞";
     });
 });
