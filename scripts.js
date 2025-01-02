@@ -1,5 +1,3 @@
-// scripts.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const typedText = document.getElementById("typed-text");
     const darkModeButton = document.getElementById("toggle-dark-mode");
