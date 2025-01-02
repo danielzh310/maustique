@@ -1,5 +1,3 @@
-/* styles.css */
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #556b2f;
@@ -25,7 +23,7 @@ h1 {
 #typed-text {
     font-size: 1.2rem;
     margin-top: 1rem;
-    min-height: 1.5em; /* Ensures text area below the heading remains consistent */
+    min-height: 1.5em;
 }
 
 #toggle-dark-mode {
