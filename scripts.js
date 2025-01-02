@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const darkModeButton = document.getElementById("toggle-dark-mode");
     const body = document.body;
 
-    const messages = ["Connecting users...", "Building something great...", "Stay tuned!"];
+    const messages = ["Brainstorming ideas...", "Building interfaces...", "Stay tuned!"];
     let messageIndex = 0;
 
     // Type text animation
